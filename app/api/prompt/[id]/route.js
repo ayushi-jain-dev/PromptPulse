@@ -48,6 +48,7 @@ export const DELETE = async (request, { params }) => {
 
         return new Response("Prompt deleted successfully", { status: 200 });
     } catch (error) {
+        console.error("Error deleting prompt:", error);
         return new Response("Error deleting prompt", { status: 500 });
     }
 };
