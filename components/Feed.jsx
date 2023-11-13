@@ -42,7 +42,7 @@ const Feed = () => {
           value={searchText}
           onChange={handleSearchChange}
           required
-          className="search_imput peer"
+          className="search_input peer"
         />
       </form>
       <PromptCardList
